@@ -1,0 +1,137 @@
+@import '_settings'
+@import '_fonts'
+
+normalize-css()
+base()
+
+.inner-content
+  max-width: 700px
+  margin: 0 auto
+
+h1,
+h2,
+h3,
+h4,
+h5
+  font-weight: normal
+  font-family: "nimbus-sans"
+
+a
+  color: #555
+  text-decoration: none
+
+  &:hover
+    color: brand-blue
+    border-color: brand-blue
+
+.content
+  padding: 25px 50px 50px 50px
+
+  p
+    font-family: 'callunaregular'
+    line-height: 1.5em
+    color: #666
+    margin: 0 0 2em 0
+
+  img
+    max-width: 100%
+    height: auto
+    margin-bottom: 2em
+
+.hero
+  padding: 60px 100px 0 100px
+      
+.logo
+  position: relative
+  padding-bottom: 60px
+  
+  &:after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 50px
+    height: 2px
+    background: brand-orange
+
+.nerdy-title
+  margin-top: 10px
+  margin-bottom: 0
+  font-size: 22px
+  font-weight: bold
+  line-height: 1em
+  letter-spacing: -.035em
+  .break
+    font-style: normal
+    display: block
+
+.tagline
+  color: rgba(black, .35)
+  display: inline-block
+  font-size: 14px
+  font-family: 'callunaregular'
+
+.post
+  margin-bottom: 25px
+  padding-bottom: 32px
+  border-bottom: 2px solid #efefef
+
+.post-title
+  margin: 25px 0
+  font-family: 'callunaregular'
+  font-size: 40px
+  letter-spacing: -.035em
+  font-weight: bold
+  
+.single
+  .post-title
+    margin-bottom: 50px
+
+.post-meta
+  font-size: 12px
+  letter-spacing: .035em
+  color: #bbb
+  font-family: "nimbus-sans"
+
+.post-date,
+.post-cats,
+.sep
+  display: inline-block
+  
+.sep
+  width: 12px;
+  height: 2px;
+  margin: 0 6px;
+  transform: translate(0, -3px)
+  background: #bbb
+  
+.post-date
+  text-transform: uppercase
+  
+.post-cats
+  font-family: 'callunaregular'
+  letter-spacing: normal
+
+.article-nav
+  .nav
+    position: fixed
+    top: 50%;
+    margin-top: -20px
+    width: 40px
+    height: 40px
+    border: 2px solid #555
+    text-align: center
+    line-height: 40px
+    display: none
+
+    &.nav-next
+      right: 20px
+
+    &.nav-prev
+      left: 20px
+
+    &:hover
+      background: brand-blue
+
+      a
+        color: #fff
